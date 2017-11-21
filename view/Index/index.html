@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Menu a pantalla completa</title>
+
+	<link rel="stylesheet" href="view/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="view/assets/css/estilos.css">
+	<link rel="stylesheet" href="view/assets/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div class="main">
+		<header>
+			<div class="wrap">
+				<img src="view/assets/multimedia/img/design/clashLo.png" alt="">
+				<div class="btn-menu" id="btn-menu">
+					<span class="fa fa-bars"></span>
+				</div>
+			</div>
+		</header>
+		<section class="seccion1">
+			<div class="wrap">
+				<section class="caption-main">
+					<h1> Torneo ClashRoyale</h1>
+					<a class="btn-view efec" data-toggle="modal" data-target="#royal_registro">Registrarse</a>
+				</section>
+			</div>
+		</section>
+		<!-- MENU FULL SCREEN -->
+
+		<div class="full-menu">
+			<div class="wrap">
+				<nav class="navegacion">
+					<ul class="menu-principal">
+						<li><a href="#">Nosotros</a></li>
+						<li><a href="#">Servicios</a></li>
+						<li><a href="#">Contacto</a></li>
+					</ul>
+					<div class="social-items">
+						<a href="#" class="fa fa-youtube-play"></a>
+						<a href="#" class="fa fa-facebook"></a>
+						<a href="#" class="fa fa-twitter"></a>
+					</div>
+				</nav>
+
+				<section class="menu-text">
+					<p>Lorem ipsum dolor sit amet,
+					consectetur adipisicing elit.
+					Et doloribus exercitationem
+						dolores ipsum repellendus
+						quas ad impedit. Culpa iure ea,
+						voluptates iste sequi,
+						beatae magni excepturi
+						explicabo assumenda illo
+						inventore, hic possimus
+						quibusdam, dolorem quos
+						repudiandae accusantium
+						quae earum quod.</p>
+				</section>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="royal_registro" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="pull-right cerrar">
+	          <a class="btn btn-danger btn-circle efec" data-dismiss="modal"><i class="fa fa-times"></i></a>
+	        </div>
+					<div class="card text-white bg-dark">
+					  <div class="card-header">
+					  	<h2 class="text-center">Registro para el torneo</h2>
+					  </div>
+					  <div class="card-body">
+					    <form id="fromulario_registro_royale">
+								<label>Nombre: </label>
+								<div class="input-group">
+								  <span class="input-group-addon fa fa-user"></span>
+								  <input type="text" name="nombre" id="nombre" class="form-control input-requiered" required placeholder="Nombre: ">
+								</div>
+								<br>
+								<label>Team(Nombre de equipo): </label>
+								<div class="input-group">
+								  <span class="input-group-addon fa fa-user"></span>
+								  <input type="text" name="apellido" id="apellido" class="form-control input-requiered" required placeholder="Team: ">
+								</div>
+								<br>
+								<label>Codigo Registro: </label>
+								<div class="input-group">
+								  <span class="input-group-addon fa fa-user"></span>
+								  <input type="text" name="ci" id="ci" class="form-control input-requiered" required placeholder="Codigo de registro: ">
+								</div>
+								<br>
+								<label>Nick ClashRoyale: </label>
+								<div class="input-group">
+								  <span class="input-group-addon fa fa-user"></span>
+								  <input type="text" name="nick_royale" id="nick_royale" class="form-control input-requiered" required placeholder="Nick ClashRoyale: ">
+								</div>
+								<br>
+								<label>Id ClashRoyale: </label>
+								<div class="input-group">
+								  <span class="input-group-addon fa fa-user"></span>
+								  <input type="text" name="id_royale" id="id_royale" class="form-control input-requiered" required placeholder="Id ClashRoyale: ">
+								</div>
+								<hr>
+								<div class="float-right">
+									<button type="submit" class="btn btn-success cursor-p efec">Registrar <i class="fa fa-send"></i></button>
+								</div>
+					    </form>
+							<div id="respuesta_registro_royale"></div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="view/assets/js/jquery-3.2.1.js"></script>
+	<script src="view/assets/js/popper.min.js"></script>
+	<script src="view/assets/js/bootstrap.min.js"></script>
+	<script src="view/assets/js/main.js"></script>
+	<script src="view/assets/js/participantes.js"></script>
+</body>
+</html>
